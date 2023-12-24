@@ -1,0 +1,24 @@
+# List 타입
+
+a = [1,2,3]
+b = [4,5,6]
+
+print(a+b)
+print(a,b)
+
+my_list = ["유재석", "조세호", "박명수"]
+print(my_list)
+
+# 조세호가 몇 번째 칸에 타고 있는가?
+print(my_list.index("조세호"))
+
+# List에 원소 추가(append, insert(index, ))
+
+## 하하가 다음 정류장에서 다음 칸에 탐
+my_list.append("하하")
+print(my_list)
+
+## 정형돈이 유재석과 조세호 사이에 탐
+my_list.insert(1, "정형돈")
+print(my_list)
+
