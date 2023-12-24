@@ -31,3 +31,10 @@ print(my_list)
 ## List 중간에 있는 특정값(정형돈)을 제거
 my_list.remove("정형돈")
 print(my_list)
+
+# Tuple 타입
+## List보다 메모리를 덜 차지, 수정이 불가함
+menu = ("돈까스", "치킨까스")
+print(menu[0])
+print(menu[1])
+
