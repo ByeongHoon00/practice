@@ -16,3 +16,10 @@ starbucks = ["유재석","박명수","하하","조세호"]
 for customer in starbucks:
     print("{0}님, 커피가 준비되었습니다.".format(customer))
 
+# while문
+i = 0 
+while True:
+    i += 1              ## while문 수행시 1씩 증가
+    if i>5 : break      ## i값이 5보다 크면 while문을 벗어남
+    print("*"*i)        ## i값의 개수만큼 "*"을 출력함
+    
