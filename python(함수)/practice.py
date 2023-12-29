@@ -35,3 +35,15 @@ def profile2(name, age, main_lang):
 ## 함수의 매개변수의 값을 키워드를 통해 전달받으면 순서가 바뀌어있어도 정상적으로 전달 가능함
 profile2(name="유재석", main_lang="python" , age=20)
 profile2(main_lang="java", age=25, name="김태호")
+
+# 가변인자를 이용한 함수 호출
+def profile3(name, age, *lang): # *을 이용해 가변인자 선언
+    print("이름 : {0}\t나이 : {1}\t".format(name,age), end=" ")
+    for language in lang:
+        print(language, end=" ")
+    print()
+
+profile3("유재석", 20, "python", "java", "c", "c++", "c#")
+profile3("김태호", 27, "kotlin", "swift")
+
+
