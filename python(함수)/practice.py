@@ -46,4 +46,24 @@ def profile3(name, age, *lang): # *을 이용해 가변인자 선언
 profile3("유재석", 20, "python", "java", "c", "c++", "c#")
 profile3("김태호", 27, "kotlin", "swift")
 
+# 지역변수와 전역변수
+i = 10
+
+def check(n):
+    # i = 20 ## 지역변수 함수내에서만 사용됨
+    global i ## 전역 공간에 있는 i를 사용
+    i = i - n
+    print("함수 내 i : {0}".format(i))
+
+def check2(i,n):
+    i = i - n
+    print("함수 내 i : {0}".format(i))
+    return i
+
+print("처음 i : {0}".format(i))
+check(2)
+print("1번 함수 사용 후 i : {0}".format(i))
+i = check2(i,2)
+print("2번 함수 사용 후 i : {0}".format(i))
+
 
