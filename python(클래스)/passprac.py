@@ -48,4 +48,3 @@ class BuildingUnit(Unit):
         pass
 
 supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
-
