@@ -21,3 +21,5 @@ except ValueError:
 except BigNumberError as err:
     print("에러가 발생하였습니다. 한 자리 숫자만 입력하세요.")
     print(err)
+finally: # 에러가 일어나드 일어나지 않든 처리 후 프로그램이 종료되지 않고 finally구문이 실행된다.
+    print("계산기를 이용해 주셔서 감사합니다.")
